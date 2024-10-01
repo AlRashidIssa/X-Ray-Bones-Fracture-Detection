@@ -1,0 +1,32 @@
+# Machine Learning libraries
+tensorflow
+scikit-learn
+
+# Image processing
+opencv-python
+
+# Numerical operations
+numpy
+
+# MLflow for experiment tracking and model management
+mlflow
+
+# Django for web and API development
+django
+djangorestframework
+
+# Testing libraries
+pytest
+pytest-django
+
+# Additional useful libraries
+pillow           # Image processing in Python
+scikit-learn     # Common ML tasks (train/test split, metrics, etc.)
+matplotlib       # Visualization for model training (optional)
+requests         # HTTP requests for API testing
+
+# Utility libraries
+gunicorn         # WSGI server for deployment (for Django)
+
+# Kaggle
+kaggle
