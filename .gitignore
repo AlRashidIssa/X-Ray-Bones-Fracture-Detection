@@ -6,7 +6,7 @@ ENV/
 config/.env
 .env
 kaggle.json
-
+*.h5
 xr_bones.zip
 *.zip
 
