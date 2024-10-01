@@ -9,3 +9,6 @@ kaggle.json
 
 xr_bones.zip
 *.zip
+
+data
+/workspaces/DetectionXR/data
