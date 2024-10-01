@@ -1,0 +1,27 @@
+dataset:
+  url: "https://drive.google.com/file/d/1z-eWq6Ld_0h9QFHVNd2biJ25lLwwNo3m/view?usp=sharing"
+  output_path: "/workspaces/DetectionXR/data/raw"
+  name_dataset: "YOLODataSet"
+  image_dir: "/workspaces/DetectionXR/data/extraction_zip/YOLODataSet/images/train"
+  label_dir: "/workspaces/DetectionXR/data/extraction_zip/YOLODataSet/labels/train"
+  val_image_dir: "/workspaces/DetectionXR/data/extraction_zip/YOLODataSet/images/val"
+  val_label_dir: "/workspaces/DetectionXR/data/extraction_zip/YOLODataSet/labels/val"
+  zip_dir: "/workspaces/DetectionXR/data/raw"
+  extract_to: "/workspaces/DetectionXR/data/extraction_zip"
+  batch_size: 4
+  image_size: [512, 512]
+  num_anchors: 3
+  num_classes: 10
+
+model:
+  AXL: "CPU"
+  inputs_shape: [512, 512, 3]
+  epochs: 1
+  batch_size: 4
+  num_classes: 10
+  num_anchors: 3
+  parameters:
+    learning_rate: 0.001
+  model_name: "first_deployment.h5"
+  summary: true
+  train: true
