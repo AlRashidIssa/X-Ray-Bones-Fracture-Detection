@@ -1,0 +1,11 @@
+# Ignore all environments
+venv/
+env/
+.venv/
+ENV/
+config/.env
+.env
+kaggle.json
+
+xr_bones.zip
+*.zip
