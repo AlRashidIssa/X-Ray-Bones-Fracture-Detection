@@ -7,7 +7,7 @@ from abc import ABC, abstractmethod
 from typing import Union, Any, List
 
 # Append the path to the workspace for importing utility functions
-append_path = "/workspaces/DetectionXR/"
+append_path = "/workspaces/X-Ray-Bones-Fracture-Detection"
 sys.path.append(append_path)
 
 # Importing custom logging utilities

@@ -16,7 +16,8 @@ Explanation of the Test Cases:
     dropout doesn't impact the output shape after upsampling.
 """
 import sys
-sys.path.append("/workspaces/DetectionXR/")
+append_path = "/workspaces/X-Ray-Bones-Fracture-Detection"
+sys.path.append(append_path)
 from src.model.convbloc_upsampleblock import ConvBlock, UpSampleBlock
 
 import unittest

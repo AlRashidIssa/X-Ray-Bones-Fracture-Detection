@@ -5,7 +5,8 @@ from typing import Tuple
 from abc import ABC, abstractmethod
 
 # Local imports
-sys.path.append("/workspaces/DetectionXR/")
+append_path = "/workspaces/X-Ray-Bones-Fracture-Detection"
+sys.path.append(append_path)
 from src.utils.reg_log import log_inference, log_error
 
 class IBlock(ABC):

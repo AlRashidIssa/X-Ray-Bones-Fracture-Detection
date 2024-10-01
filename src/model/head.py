@@ -6,7 +6,8 @@ from tensorflow.keras.layers import (Conv2D, Flatten, BatchNormalization, Dense,
 from typing import Tuple
 from abc import ABC, abstractmethod
 
-sys.path.append("/workspaces/DetectionXR/")
+append_path = "/workspaces/X-Ray-Bones-Fracture-Detection"
+sys.path.append(append_path)
 from src.model.backbone import Backbone
 from src.model.convbloc_upsampleblock import ConvBlock, UpSampleBlock
 from src.utils.reg_log import log_error

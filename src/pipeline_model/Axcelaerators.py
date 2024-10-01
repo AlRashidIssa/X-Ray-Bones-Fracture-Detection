@@ -3,7 +3,8 @@ import sys
 from abc import ABC, abstractmethod
 from tensorflow.python.distribute.distribute_lib import Strategy
 from tensorflow.python.framework.ops import device_v2 as device
-sys.path.append('/workspaces/DetectionXR/')
+append_path = "/workspaces/X-Ray-Bones-Fracture-Detection"
+sys.path.append(append_path)
 from src.utils.reg_log import log_error, log_inference
 
 class IAxcelaerators(ABC):

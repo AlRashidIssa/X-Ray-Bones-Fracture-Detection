@@ -4,7 +4,8 @@ from pathlib import Path
 import os
 import numpy as np
 import sys
-sys.path.append("/workspaces/DetectionXR")
+append_path = "/workspaces/X-Ray-Bones-Fracture-Detection"
+sys.path.append(append_path)
 
 from src.utils.reg_log import log_inference, log_error
 

@@ -2,7 +2,8 @@ import unittest
 import tensorflow as tf
 import sys
 
-sys.path.append("/workspaces/DetectionXR/")
+append_path = "/workspaces/X-Ray-Bones-Fracture-Detection"
+sys.path.append(append_path)
 from src.pipeline_model.pipeline_tensors import ModelPipeline  # Adjust the import according to your project structure
 from src.utils.reg_log import log_error
 

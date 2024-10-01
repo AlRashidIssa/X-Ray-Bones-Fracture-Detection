@@ -4,7 +4,8 @@ import yaml
 from typing import Union, Dict, Any
 
 
-sys.path.append("/workspaces/DetectionXR")
+append_path = "/workspaces/X-Ray-Bones-Fracture-Detection"
+sys.path.append(append_path)
 from src.utils.reg_log import log_error, log_inference
 
 

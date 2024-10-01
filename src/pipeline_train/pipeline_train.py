@@ -2,7 +2,8 @@ import sys
 import tensorflow as tf
 from abc import ABC, abstractmethod
 
-sys.path.append('/workspaces/DetectionXR/')
+append_path = "/workspaces/X-Ray-Bones-Fracture-Detection"
+sys.path.append(append_path)
 
 # Importing custom modules
 from src.pipeline_model.pipeline_tensors import ModelPipeline

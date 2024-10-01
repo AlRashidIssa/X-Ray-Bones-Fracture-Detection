@@ -1,6 +1,7 @@
 import gdown
 import sys
-sys.path.append("/workspaces/DetectionXR/")
+append_path = "/workspaces/X-Ray-Bones-Fracture-Detection"
+sys.path.append(append_path)
 from pathlib import Path
 from abc import ABC, abstractmethod
 

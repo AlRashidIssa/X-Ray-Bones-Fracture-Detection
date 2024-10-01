@@ -1,5 +1,6 @@
 import sys
-sys.path.append("/workspaces/DetectionXR/")
+append_path = "/workspaces/X-Ray-Bones-Fracture-Detection"
+sys.path.append(append_path)
 from src.model.backbone import Backbone
 
 import unittest

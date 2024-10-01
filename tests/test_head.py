@@ -2,7 +2,8 @@ import sys
 import unittest
 import tensorflow as tf
 
-sys.path.append("/workspaces/DetectionXR/")
+append_path = "/workspaces/X-Ray-Bones-Fracture-Detection"
+sys.path.append(append_path)
 from src.model.head import Head  # Adjust the import based on your project structure
 
 class TestHead(unittest.TestCase):

@@ -4,7 +4,8 @@ from abc import ABC, abstractmethod
 from typing import List, Tuple, Optional
 import tensorflow as tf
 
-sys.path.append("/workspaces/DetectionXR/")
+append_path = "/workspaces/X-Ray-Bones-Fracture-Detection"
+sys.path.append(append_path)
 
 from src.operation_data.generate_by_batch import DataGenerator
 from src.utils.read_yaml import load_config

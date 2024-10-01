@@ -4,7 +4,8 @@ import tensorflow as tf
 from abc import ABC, abstractmethod
 from typing import Tuple
 
-sys.path.append("/workspaces/DetectionXR/")
+append_path = "/workspaces/X-Ray-Bones-Fracture-Detection"
+sys.path.append(append_path)
 from src.model.backbone import Backbone
 from src.model.feature_pyramid_network import FeaturePyramidNetwork
 from src.model.head import Head
