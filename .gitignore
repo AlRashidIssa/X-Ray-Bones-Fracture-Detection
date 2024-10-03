@@ -32,3 +32,5 @@ db
 *.sql
 *.db
 
+
+media/
