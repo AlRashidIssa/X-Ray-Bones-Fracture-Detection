@@ -7,7 +7,6 @@ sys.path.append(append_path)
 
 # Importing custom modules
 from src.pipeline_model.pipeline_tensors import ModelPipeline
-from src.pipeline_model.pipeline_compile_optimization import PipelineCompileOptimization
 from src.pipeline_model.Axcelaerators import Axcelaerators
 from src.utils.reg_log import log_error, log_train
 
