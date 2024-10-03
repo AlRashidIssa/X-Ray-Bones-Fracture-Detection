@@ -37,6 +37,27 @@ error_log_path = "/workspaces/X-Ray-Bones-Fracture-Detection/logs/error_logs/err
 inference_log_path = "/workspaces/X-Ray-Bones-Fracture-Detection/logs/inference_logs/inference.log"
 train_log_path = "/workspaces/X-Ray-Bones-Fracture-Detection/logs/train_logs/train.log"
 
+log_paths = [api_log_path, error_log_path, inference_log_path, train_log_path]
+def ensure_log_exists(log_path):
+    """Ensure that log files exists. If the file or its directory does not exists exists use os"""
+    # Extract directory from the log file path
+    log_dir = os.path.dirname(log_path)
+
+    # Check if the directory exists, if not, create it
+    if not os.path.exists(log_dir):
+        print(f"Creating directory: {log_dir}")
+        os.makedirs(log_dir)
+    
+    # Check if the log file exists, if not, create an empty file
+    if not os.path.exists(log_path):
+        print(f"Creatting log file: {log_path}")
+        with open(log_path, 'w') as f:
+            f.write("") # Create an empty log file
+
+# Ensure all lgo files exist
+for log_path in log_paths:
+    ensure_log_exists(log_path=log_path)
+
 # Setup separate loggers for each component with appropriate logging levels
 api_logger = setup_logging(api_log_path, "API", logging.INFO)
 train_logger = setup_logging(train_log_path, "Training", logging.WARNING)
