@@ -454,3 +454,323 @@ max     512.000000   512.000000
 2024-10-01 01:17:27,131 - Inference - DEBUG - Extraction completed successfully to /workspaces/DetectionXR/data/extraction_zip
 2024-10-01 01:17:27,144 - Inference - DEBUG - Extracted dataset 'YOLODataSet' to /workspaces/DetectionXR/data/extraction_zip.
 2024-10-01 01:17:28,600 - Inference - DEBUG - Running on CPU.
+2024-10-01 15:25:10,038 - Inference - DEBUG - Loading pre-trained model: XRayBoneFractureModel from path: /workspaces/X-Ray-Bones-Fracture-Detection/pre-trained_model/XRayBoneFractureModel.h5
+2024-10-01 15:25:10,038 - Inference - DEBUG - Loading model from: /workspaces/X-Ray-Bones-Fracture-Detection/pre-trained_model/XRayBoneFractureModel.h5
+2024-10-01 15:25:12,604 - Inference - DEBUG - Model loaded successfully: XRayBoneFractureModel
+2024-10-01 15:25:12,604 - Inference - DEBUG - Image provided for prediction: str
+2024-10-01 15:25:12,604 - Inference - DEBUG - Loading image from file path: /workspaces/X-Ray-Bones-Fracture-Detection/data/extraction_zip/YOLODataSet/images/val/XR_ELBOW_positive_997.png
+2024-10-01 15:25:12,605 - Inference - DEBUG - Resizing image from (512, 253, 3) to (512, 512)
+2024-10-01 15:25:12,607 - Inference - DEBUG - Making predictions with the model.
+2024-10-01 15:25:44,826 - Inference - DEBUG - Loading pre-trained model: XRayBoneFractureModel from path: /workspaces/X-Ray-Bones-Fracture-Detection/pre-trained_model/XRayBoneFractureModel.h5
+2024-10-01 15:25:44,826 - Inference - DEBUG - Loading model from: /workspaces/X-Ray-Bones-Fracture-Detection/pre-trained_model/XRayBoneFractureModel.h5
+2024-10-01 15:25:47,173 - Inference - DEBUG - Model loaded successfully: XRayBoneFractureModel
+2024-10-01 15:25:47,173 - Inference - DEBUG - Image provided for prediction: str
+2024-10-01 15:25:47,173 - Inference - DEBUG - Loading image from file path: /workspaces/X-Ray-Bones-Fracture-Detection/data/extraction_zip/YOLODataSet/images/val/XR_ELBOW_positive_997.png
+2024-10-01 15:25:47,175 - Inference - DEBUG - Resizing image from (512, 253, 3) to (512, 512)
+2024-10-01 15:25:47,177 - Inference - DEBUG - Making predictions with the model.
+2024-10-01 15:29:14,619 - Inference - DEBUG - Loading pre-trained model: XRayBoneFractureModel from path: /workspaces/X-Ray-Bones-Fracture-Detection/pre-trained_model/XRayBoneFractureModel.h5
+2024-10-01 15:29:14,619 - Inference - DEBUG - Loading model from: /workspaces/X-Ray-Bones-Fracture-Detection/pre-trained_model/XRayBoneFractureModel.h5
+2024-10-01 15:29:16,889 - Inference - DEBUG - Model loaded successfully: XRayBoneFractureModel
+2024-10-01 15:29:16,889 - Inference - DEBUG - Image provided for prediction: str
+2024-10-01 15:29:16,890 - Inference - DEBUG - Loading image from file path: /workspaces/X-Ray-Bones-Fracture-Detection/data/extraction_zip/YOLODataSet/images/val/XR_ELBOW_positive_997.png
+2024-10-01 15:29:16,891 - Inference - DEBUG - Resizing image from (512, 253, 3) to (512, 512)
+2024-10-01 15:29:16,893 - Inference - DEBUG - Making predictions with the model.
+2024-10-01 15:30:43,493 - Inference - DEBUG - Loading pre-trained model: XRayBoneFractureModel from path: /workspaces/X-Ray-Bones-Fracture-Detection/pre-trained_model/XRayBoneFractureModel.h5
+2024-10-01 15:30:43,493 - Inference - DEBUG - Loading model from: /workspaces/X-Ray-Bones-Fracture-Detection/pre-trained_model/XRayBoneFractureModel.h5
+2024-10-01 15:30:45,834 - Inference - DEBUG - Model loaded successfully: XRayBoneFractureModel
+2024-10-01 15:30:45,835 - Inference - DEBUG - Image provided for prediction: str
+2024-10-01 15:30:45,835 - Inference - DEBUG - Loading image from file path: /workspaces/X-Ray-Bones-Fracture-Detection/data/extraction_zip/YOLODataSet/images/val/XR_ELBOW_positive_997.png
+2024-10-01 15:30:45,836 - Inference - DEBUG - Resizing image from (512, 253, 3) to (512, 512)
+2024-10-01 15:30:45,838 - Inference - DEBUG - Making predictions with the model.
+2024-10-01 15:30:47,178 - Inference - DEBUG - Annotating image with bounding boxes and labels.
+2024-10-01 15:33:38,812 - Inference - DEBUG - Loading pre-trained model: XRayBoneFractureModel from path: /workspaces/X-Ray-Bones-Fracture-Detection/pre-trained_model/XRayBoneFractureModel.h5
+2024-10-01 15:33:38,812 - Inference - DEBUG - Loading model from: /workspaces/X-Ray-Bones-Fracture-Detection/pre-trained_model/XRayBoneFractureModel.h5
+2024-10-01 15:33:40,936 - Inference - DEBUG - Model loaded successfully: XRayBoneFractureModel
+2024-10-01 15:33:40,936 - Inference - DEBUG - Image provided for prediction: str
+2024-10-01 15:33:40,936 - Inference - DEBUG - Loading image from file path: /workspaces/X-Ray-Bones-Fracture-Detection/data/extraction_zip/YOLODataSet/images/val/XR_ELBOW_positive_997.png
+2024-10-01 15:33:40,938 - Inference - DEBUG - Resizing image from (512, 253, 3) to (512, 512)
+2024-10-01 15:33:40,939 - Inference - DEBUG - Making predictions with the model.
+2024-10-01 15:35:06,552 - Inference - DEBUG - Loading pre-trained model: XRayBoneFractureModel from path: /workspaces/X-Ray-Bones-Fracture-Detection/pre-trained_model/XRayBoneFractureModel.h5
+2024-10-01 15:35:06,552 - Inference - DEBUG - Loading model from: /workspaces/X-Ray-Bones-Fracture-Detection/pre-trained_model/XRayBoneFractureModel.h5
+2024-10-01 15:35:08,872 - Inference - DEBUG - Model loaded successfully: XRayBoneFractureModel
+2024-10-01 15:35:08,872 - Inference - DEBUG - Image provided for prediction: str
+2024-10-01 15:35:08,872 - Inference - DEBUG - Loading image from file path: /workspaces/X-Ray-Bones-Fracture-Detection/data/extraction_zip/YOLODataSet/images/val/XR_ELBOW_positive_997.png
+2024-10-01 15:35:08,873 - Inference - DEBUG - Resizing image from (512, 253, 3) to (512, 512)
+2024-10-01 15:35:08,875 - Inference - DEBUG - Making predictions with the model.
+2024-10-01 15:37:15,832 - Inference - DEBUG - Loading pre-trained model: XRayBoneFractureModel from path: /workspaces/X-Ray-Bones-Fracture-Detection/pre-trained_model/XRayBoneFractureModel.h5
+2024-10-01 15:37:15,833 - Inference - DEBUG - Loading model from: /workspaces/X-Ray-Bones-Fracture-Detection/pre-trained_model/XRayBoneFractureModel.h5
+2024-10-01 15:37:18,114 - Inference - DEBUG - Model loaded successfully: XRayBoneFractureModel
+2024-10-01 15:37:18,114 - Inference - DEBUG - Image provided for prediction: str
+2024-10-01 15:37:18,114 - Inference - DEBUG - Loading image from file path: /workspaces/X-Ray-Bones-Fracture-Detection/data/extraction_zip/YOLODataSet/images/val/XR_ELBOW_positive_997.png
+2024-10-01 15:37:18,116 - Inference - DEBUG - Resizing image from (512, 253, 3) to (512, 512)
+2024-10-01 15:37:18,117 - Inference - DEBUG - Making predictions with the model.
+2024-10-01 15:37:19,428 - Inference - DEBUG - Annotating image with bounding boxes and labels.
+2024-10-01 15:38:01,922 - Inference - DEBUG - Loading pre-trained model: XRayBoneFractureModel from path: /workspaces/X-Ray-Bones-Fracture-Detection/pre-trained_model/XRayBoneFractureModel.h5
+2024-10-01 15:38:01,922 - Inference - DEBUG - Loading model from: /workspaces/X-Ray-Bones-Fracture-Detection/pre-trained_model/XRayBoneFractureModel.h5
+2024-10-01 15:38:04,202 - Inference - DEBUG - Model loaded successfully: XRayBoneFractureModel
+2024-10-01 15:38:04,202 - Inference - DEBUG - Image provided for prediction: str
+2024-10-01 15:38:04,202 - Inference - DEBUG - Loading image from file path: /workspaces/X-Ray-Bones-Fracture-Detection/data/extraction_zip/YOLODataSet/images/val/XR_ELBOW_positive_997.png
+2024-10-01 15:38:04,204 - Inference - DEBUG - Resizing image from (512, 253, 3) to (512, 512)
+2024-10-01 15:38:04,205 - Inference - DEBUG - Making predictions with the model.
+2024-10-01 15:45:22,713 - Inference - DEBUG - Loading pre-trained model: XRayBoneFractureModel from path: /workspaces/X-Ray-Bones-Fracture-Detection/pre-trained_model/XRayBoneFractureModel.h5
+2024-10-01 15:45:22,714 - Inference - DEBUG - Loading model from: /workspaces/X-Ray-Bones-Fracture-Detection/pre-trained_model/XRayBoneFractureModel.h5
+2024-10-01 15:45:24,969 - Inference - DEBUG - Model loaded successfully: XRayBoneFractureModel
+2024-10-01 15:45:24,970 - Inference - DEBUG - Image provided for prediction: str
+2024-10-01 15:45:24,970 - Inference - DEBUG - Loading image from file path: /workspaces/X-Ray-Bones-Fracture-Detection/data/extraction_zip/YOLODataSet/images/val/XR_ELBOW_positive_997.png
+2024-10-01 15:45:24,971 - Inference - DEBUG - Resizing image from (512, 253, 3) to (512, 512)
+2024-10-01 15:45:24,973 - Inference - DEBUG - Making predictions with the model.
+2024-10-01 15:47:12,038 - Inference - DEBUG - Loading pre-trained model: XRayBoneFractureModel from path: /workspaces/X-Ray-Bones-Fracture-Detection/pre-trained_model/XRayBoneFractureModel.h5
+2024-10-01 15:47:12,038 - Inference - DEBUG - Loading model from: /workspaces/X-Ray-Bones-Fracture-Detection/pre-trained_model/XRayBoneFractureModel.h5
+2024-10-01 15:47:14,116 - Inference - DEBUG - Model loaded successfully: XRayBoneFractureModel
+2024-10-01 15:47:14,116 - Inference - DEBUG - Image provided for prediction: str
+2024-10-01 15:47:14,116 - Inference - DEBUG - Loading image from file path: /workspaces/X-Ray-Bones-Fracture-Detection/data/extraction_zip/YOLODataSet/images/val/XR_ELBOW_positive_997.png
+2024-10-01 15:47:14,118 - Inference - DEBUG - Resizing image from (512, 253, 3) to (512, 512)
+2024-10-01 15:47:14,119 - Inference - DEBUG - Making predictions with the model.
+2024-10-01 15:47:15,446 - Inference - DEBUG - Annotating image with bounding boxes and labels.
+2024-10-01 15:48:49,464 - Inference - DEBUG - Loading pre-trained model: XRayBoneFractureModel from path: /workspaces/X-Ray-Bones-Fracture-Detection/pre-trained_model/XRayBoneFractureModel.h5
+2024-10-01 15:48:49,465 - Inference - DEBUG - Loading model from: /workspaces/X-Ray-Bones-Fracture-Detection/pre-trained_model/XRayBoneFractureModel.h5
+2024-10-01 15:48:51,474 - Inference - DEBUG - Model loaded successfully: XRayBoneFractureModel
+2024-10-01 15:48:51,474 - Inference - DEBUG - Image provided for prediction: str
+2024-10-01 15:48:51,474 - Inference - DEBUG - Loading image from file path: /workspaces/X-Ray-Bones-Fracture-Detection/data/extraction_zip/YOLODataSet/images/val/XR_ELBOW_positive_997.png
+2024-10-01 15:48:51,475 - Inference - DEBUG - Resizing image from (512, 253, 3) to (512, 512)
+2024-10-01 15:48:51,477 - Inference - DEBUG - Making predictions with the model.
+2024-10-01 15:48:52,821 - Inference - DEBUG - Annotating image with bounding boxes and labels.
+2024-10-01 16:27:08,800 - Inference - DEBUG - Loading pre-trained model: XRayBoneFractureModel from path: /workspaces/X-Ray-Bones-Fracture-Detection/pre-trained_model/XRayBoneFractureModel.h5
+2024-10-01 16:27:08,800 - Inference - DEBUG - Loading model from: /workspaces/X-Ray-Bones-Fracture-Detection/pre-trained_model/XRayBoneFractureModel.h5
+2024-10-01 16:27:14,619 - Inference - DEBUG - Model loaded successfully: XRayBoneFractureModel
+2024-10-01 16:27:14,619 - Inference - DEBUG - Image provided for prediction: str
+2024-10-01 16:27:14,619 - Inference - DEBUG - Loading image from file path: /workspaces/X-Ray-Bones-Fracture-Detection/data/extraction_zip/YOLODataSet/images/val/XR_ELBOW_positive_997.png
+2024-10-01 16:27:14,621 - Inference - DEBUG - Resizing image from (512, 253, 3) to (512, 512)
+2024-10-01 16:27:14,623 - Inference - DEBUG - Making predictions with the model.
+2024-10-01 16:27:16,224 - Inference - DEBUG - Annotating image with bounding boxes and labels.
+2024-10-03 03:48:32,353 - Inference - DEBUG - Loading pre-trained model: XRayBoneFractureModel from path: /workspaces/X-Ray-Bones-Fracture-Detection/pre-trained_model/XRayBoneFractureModel.h5
+2024-10-03 03:48:32,355 - Inference - DEBUG - Loading model from: /workspaces/X-Ray-Bones-Fracture-Detection/pre-trained_model/XRayBoneFractureModel.h5
+2024-10-03 03:49:13,909 - Inference - DEBUG - Model loaded successfully: XRayBoneFractureModel
+2024-10-03 03:49:13,909 - Inference - DEBUG - Image provided for prediction: str
+2024-10-03 03:49:13,909 - Inference - DEBUG - Loading image from file path: /workspaces/X-Ray-Bones-Fracture-Detection/data/extraction_zip/YOLODataSet/images/val/XR_ELBOW_positive_997.png
+2024-10-03 03:49:14,657 - Inference - DEBUG - Resizing image from (512, 253, 3) to (512, 512)
+2024-10-03 03:49:14,750 - Inference - DEBUG - Making predictions with the model.
+2024-10-03 03:49:17,083 - Inference - DEBUG - Annotating image with bounding boxes and labels.
+2024-10-03 03:52:58,939 - Inference - DEBUG - Loading pre-trained model: XRayBoneFractureModel from path: /workspaces/X-Ray-Bones-Fracture-Detection/pre-trained_model/XRayBoneFractureModel.h5
+2024-10-03 03:52:58,939 - Inference - DEBUG - Loading model from: /workspaces/X-Ray-Bones-Fracture-Detection/pre-trained_model/XRayBoneFractureModel.h5
+2024-10-03 03:53:04,807 - Inference - DEBUG - Model loaded successfully: XRayBoneFractureModel
+2024-10-03 03:53:04,807 - Inference - DEBUG - Image provided for prediction: str
+2024-10-03 03:53:04,807 - Inference - DEBUG - Loading image from file path: /workspaces/X-Ray-Bones-Fracture-Detection/data/extraction_zip/YOLODataSet/images/val/XR_ELBOW_positive_997.png
+2024-10-03 03:53:04,812 - Inference - DEBUG - Resizing image from (512, 253, 3) to (512, 512)
+2024-10-03 03:53:04,814 - Inference - DEBUG - Making predictions with the model.
+2024-10-03 03:53:06,410 - Inference - DEBUG - Annotating image with bounding boxes and labels.
+2024-10-03 03:57:23,489 - Inference - DEBUG - Loading pre-trained model: XRayBoneFractureModel from path: /workspaces/X-Ray-Bones-Fracture-Detection/pre-trained_model/XRayBoneFractureModel.h5
+2024-10-03 03:57:23,489 - Inference - DEBUG - Loading model from: /workspaces/X-Ray-Bones-Fracture-Detection/pre-trained_model/XRayBoneFractureModel.h5
+2024-10-03 03:57:27,351 - Inference - DEBUG - Model loaded successfully: XRayBoneFractureModel
+2024-10-03 03:57:27,351 - Inference - DEBUG - Image provided for prediction: str
+2024-10-03 03:57:27,351 - Inference - DEBUG - Loading image from file path: /workspaces/X-Ray-Bones-Fracture-Detection/data/extraction_zip/YOLODataSet/images/val/XR_ELBOW_positive_997.png
+2024-10-03 03:57:27,353 - Inference - DEBUG - Resizing image from (512, 253, 3) to (512, 512)
+2024-10-03 03:57:27,355 - Inference - DEBUG - Making predictions with the model.
+2024-10-03 03:57:28,797 - Inference - DEBUG - Image prediction completed.
+2024-10-03 03:58:57,935 - Inference - DEBUG - Loading pre-trained model: XRayBoneFractureModel from path: /workspaces/X-Ray-Bones-Fracture-Detection/pre-trained_model/XRayBoneFractureModel.h5
+2024-10-03 03:58:57,935 - Inference - DEBUG - Loading model from: /workspaces/X-Ray-Bones-Fracture-Detection/pre-trained_model/XRayBoneFractureModel.h5
+2024-10-03 03:59:00,974 - Inference - DEBUG - Model loaded successfully: XRayBoneFractureModel
+2024-10-03 03:59:00,974 - Inference - DEBUG - Image provided for prediction: str
+2024-10-03 03:59:00,974 - Inference - DEBUG - Loading image from file path: /workspaces/X-Ray-Bones-Fracture-Detection/data/extraction_zip/YOLODataSet/images/val/XR_ELBOW_positive_997.png
+2024-10-03 03:59:00,976 - Inference - DEBUG - Resizing image from (512, 253, 3) to (512, 512)
+2024-10-03 03:59:00,978 - Inference - DEBUG - Making predictions with the model.
+2024-10-03 03:59:02,254 - Inference - DEBUG - Image prediction completed.
+2024-10-03 04:00:25,415 - Inference - DEBUG - Loading pre-trained model: XRayBoneFractureModel from path: /workspaces/X-Ray-Bones-Fracture-Detection/pre-trained_model/XRayBoneFractureModel.h5
+2024-10-03 04:00:25,416 - Inference - DEBUG - Loading model from: /workspaces/X-Ray-Bones-Fracture-Detection/pre-trained_model/XRayBoneFractureModel.h5
+2024-10-03 04:00:27,558 - Inference - DEBUG - Model loaded successfully: XRayBoneFractureModel
+2024-10-03 04:00:27,558 - Inference - DEBUG - Image provided for prediction: str
+2024-10-03 04:00:27,558 - Inference - DEBUG - Loading image from file path: /workspaces/X-Ray-Bones-Fracture-Detection/data/extraction_zip/YOLODataSet/images/val/XR_ELBOW_positive_997.png
+2024-10-03 04:00:27,560 - Inference - DEBUG - Resizing image from (512, 253, 3) to (512, 512)
+2024-10-03 04:00:27,562 - Inference - DEBUG - Making predictions with the model.
+2024-10-03 04:00:28,839 - Inference - DEBUG - Image prediction completed.
+2024-10-03 04:01:09,968 - Inference - DEBUG - Loading pre-trained model: XRayBoneFractureModel from path: /workspaces/X-Ray-Bones-Fracture-Detection/pre-trained_model/XRayBoneFractureModel.h5
+2024-10-03 04:01:09,969 - Inference - DEBUG - Loading model from: /workspaces/X-Ray-Bones-Fracture-Detection/pre-trained_model/XRayBoneFractureModel.h5
+2024-10-03 04:01:12,293 - Inference - DEBUG - Model loaded successfully: XRayBoneFractureModel
+2024-10-03 04:01:12,295 - Inference - DEBUG - Image provided for prediction: str
+2024-10-03 04:01:12,296 - Inference - DEBUG - Loading image from file path: /workspaces/X-Ray-Bones-Fracture-Detection/data/extraction_zip/YOLODataSet/images/val/XR_ELBOW_positive_997.png
+2024-10-03 04:01:12,301 - Inference - DEBUG - Resizing image from (512, 253, 3) to (512, 512)
+2024-10-03 04:01:12,305 - Inference - DEBUG - Making predictions with the model.
+2024-10-03 04:01:13,870 - Inference - DEBUG - Image prediction completed.
+2024-10-03 04:06:01,950 - Inference - DEBUG - Loading pre-trained model: XRayBoneFractureModel from path: /workspaces/X-Ray-Bones-Fracture-Detection/pre-trained_model/XRayBoneFractureModel.h5
+2024-10-03 04:06:01,951 - Inference - DEBUG - Loading model from: /workspaces/X-Ray-Bones-Fracture-Detection/pre-trained_model/XRayBoneFractureModel.h5
+2024-10-03 04:06:03,971 - Inference - DEBUG - Model loaded successfully: XRayBoneFractureModel
+2024-10-03 04:06:03,973 - Inference - DEBUG - Image provided for prediction: str
+2024-10-03 04:06:03,974 - Inference - DEBUG - Loading image from file path: /workspaces/X-Ray-Bones-Fracture-Detection/data/extraction_zip/YOLODataSet/images/val/XR_ELBOW_positive_997.png
+2024-10-03 04:06:03,977 - Inference - DEBUG - Resizing image from (512, 253, 3) to (512, 512)
+2024-10-03 04:06:03,981 - Inference - DEBUG - Making predictions with the model.
+2024-10-03 04:06:05,197 - Inference - DEBUG - Image prediction completed.
+2024-10-03 04:07:02,985 - Inference - DEBUG - Loading pre-trained model: XRayBoneFractureModel from path: /workspaces/X-Ray-Bones-Fracture-Detection/pre-trained_model/XRayBoneFractureModel.h5
+2024-10-03 04:07:02,986 - Inference - DEBUG - Loading model from: /workspaces/X-Ray-Bones-Fracture-Detection/pre-trained_model/XRayBoneFractureModel.h5
+2024-10-03 04:07:04,969 - Inference - DEBUG - Model loaded successfully: XRayBoneFractureModel
+2024-10-03 04:07:04,969 - Inference - DEBUG - Image provided for prediction: str
+2024-10-03 04:07:04,969 - Inference - DEBUG - Loading image from file path: /workspaces/X-Ray-Bones-Fracture-Detection/data/extraction_zip/YOLODataSet/images/val/XR_ELBOW_positive_997.png
+2024-10-03 04:07:04,970 - Inference - DEBUG - Resizing image from (512, 253, 3) to (512, 512)
+2024-10-03 04:07:04,972 - Inference - DEBUG - Making predictions with the model.
+2024-10-03 04:07:06,171 - Inference - DEBUG - Image prediction completed.
+2024-10-03 04:07:24,223 - Inference - DEBUG - Loading pre-trained model: XRayBoneFractureModel from path: /workspaces/X-Ray-Bones-Fracture-Detection/pre-trained_model/XRayBoneFractureModel.h5
+2024-10-03 04:07:24,223 - Inference - DEBUG - Loading model from: /workspaces/X-Ray-Bones-Fracture-Detection/pre-trained_model/XRayBoneFractureModel.h5
+2024-10-03 04:07:26,116 - Inference - DEBUG - Model loaded successfully: XRayBoneFractureModel
+2024-10-03 04:07:26,116 - Inference - DEBUG - Image provided for prediction: str
+2024-10-03 04:07:26,116 - Inference - DEBUG - Loading image from file path: /workspaces/X-Ray-Bones-Fracture-Detection/data/extraction_zip/YOLODataSet/images/val/XR_ELBOW_positive_997.png
+2024-10-03 04:07:26,117 - Inference - DEBUG - Resizing image from (512, 253, 3) to (512, 512)
+2024-10-03 04:07:26,119 - Inference - DEBUG - Making predictions with the model.
+2024-10-03 04:07:27,407 - Inference - DEBUG - Image prediction completed.
+2024-10-03 04:07:42,496 - Inference - DEBUG - Loading pre-trained model: XRayBoneFractureModel from path: /workspaces/X-Ray-Bones-Fracture-Detection/pre-trained_model/XRayBoneFractureModel.h5
+2024-10-03 04:07:42,496 - Inference - DEBUG - Loading model from: /workspaces/X-Ray-Bones-Fracture-Detection/pre-trained_model/XRayBoneFractureModel.h5
+2024-10-03 04:07:44,439 - Inference - DEBUG - Model loaded successfully: XRayBoneFractureModel
+2024-10-03 04:07:44,439 - Inference - DEBUG - Image provided for prediction: str
+2024-10-03 04:07:44,439 - Inference - DEBUG - Loading image from file path: /workspaces/X-Ray-Bones-Fracture-Detection/data/extraction_zip/YOLODataSet/images/val/XR_ELBOW_positive_997.png
+2024-10-03 04:07:44,441 - Inference - DEBUG - Resizing image from (512, 253, 3) to (512, 512)
+2024-10-03 04:07:44,443 - Inference - DEBUG - Making predictions with the model.
+2024-10-03 04:07:45,649 - Inference - DEBUG - Image prediction completed.
+2024-10-03 04:08:14,582 - Inference - DEBUG - Loading pre-trained model: XRayBoneFractureModel from path: /workspaces/X-Ray-Bones-Fracture-Detection/pre-trained_model/XRayBoneFractureModel.h5
+2024-10-03 04:08:14,582 - Inference - DEBUG - Loading model from: /workspaces/X-Ray-Bones-Fracture-Detection/pre-trained_model/XRayBoneFractureModel.h5
+2024-10-03 04:08:16,455 - Inference - DEBUG - Model loaded successfully: XRayBoneFractureModel
+2024-10-03 04:08:16,455 - Inference - DEBUG - Image provided for prediction: str
+2024-10-03 04:08:16,455 - Inference - DEBUG - Loading image from file path: /workspaces/X-Ray-Bones-Fracture-Detection/data/extraction_zip/YOLODataSet/images/val/XR_ELBOW_positive_997.png
+2024-10-03 04:08:16,456 - Inference - DEBUG - Resizing image from (512, 253, 3) to (512, 512)
+2024-10-03 04:08:16,458 - Inference - DEBUG - Making predictions with the model.
+2024-10-03 04:08:17,665 - Inference - DEBUG - Image prediction completed.
+2024-10-03 04:08:41,807 - Inference - DEBUG - Loading pre-trained model: XRayBoneFractureModel from path: /workspaces/X-Ray-Bones-Fracture-Detection/pre-trained_model/XRayBoneFractureModel.h5
+2024-10-03 04:08:41,807 - Inference - DEBUG - Loading model from: /workspaces/X-Ray-Bones-Fracture-Detection/pre-trained_model/XRayBoneFractureModel.h5
+2024-10-03 04:08:43,696 - Inference - DEBUG - Model loaded successfully: XRayBoneFractureModel
+2024-10-03 04:08:43,697 - Inference - DEBUG - Image provided for prediction: str
+2024-10-03 04:08:43,697 - Inference - DEBUG - Loading image from file path: /workspaces/X-Ray-Bones-Fracture-Detection/data/extraction_zip/YOLODataSet/images/val/XR_ELBOW_positive_997.png
+2024-10-03 04:08:43,698 - Inference - DEBUG - Resizing image from (512, 253, 3) to (512, 512)
+2024-10-03 04:08:43,700 - Inference - DEBUG - Making predictions with the model.
+2024-10-03 04:08:44,903 - Inference - DEBUG - Annotating image with bounding boxes and labels.
+2024-10-03 04:08:44,903 - Inference - DEBUG - Image prediction completed.
+2024-10-03 04:09:10,307 - Inference - DEBUG - Loading pre-trained model: XRayBoneFractureModel from path: /workspaces/X-Ray-Bones-Fracture-Detection/pre-trained_model/XRayBoneFractureModel.h5
+2024-10-03 04:09:10,308 - Inference - DEBUG - Loading model from: /workspaces/X-Ray-Bones-Fracture-Detection/pre-trained_model/XRayBoneFractureModel.h5
+2024-10-03 04:09:12,223 - Inference - DEBUG - Model loaded successfully: XRayBoneFractureModel
+2024-10-03 04:09:12,223 - Inference - DEBUG - Image provided for prediction: str
+2024-10-03 04:09:12,223 - Inference - DEBUG - Loading image from file path: /workspaces/X-Ray-Bones-Fracture-Detection/data/extraction_zip/YOLODataSet/images/val/XR_ELBOW_positive_997.png
+2024-10-03 04:09:12,225 - Inference - DEBUG - Resizing image from (512, 253, 3) to (512, 512)
+2024-10-03 04:09:12,227 - Inference - DEBUG - Making predictions with the model.
+2024-10-03 04:09:13,409 - Inference - DEBUG - Annotating image with bounding boxes and labels.
+2024-10-03 04:09:13,409 - Inference - DEBUG - Image prediction completed.
+2024-10-03 04:09:30,541 - Inference - DEBUG - Loading pre-trained model: XRayBoneFractureModel from path: /workspaces/X-Ray-Bones-Fracture-Detection/pre-trained_model/XRayBoneFractureModel.h5
+2024-10-03 04:09:30,541 - Inference - DEBUG - Loading model from: /workspaces/X-Ray-Bones-Fracture-Detection/pre-trained_model/XRayBoneFractureModel.h5
+2024-10-03 04:09:32,334 - Inference - DEBUG - Model loaded successfully: XRayBoneFractureModel
+2024-10-03 04:09:32,334 - Inference - DEBUG - Image provided for prediction: str
+2024-10-03 04:09:32,334 - Inference - DEBUG - Loading image from file path: /workspaces/X-Ray-Bones-Fracture-Detection/data/extraction_zip/YOLODataSet/images/val/XR_ELBOW_positive_997.png
+2024-10-03 04:09:32,335 - Inference - DEBUG - Resizing image from (512, 253, 3) to (512, 512)
+2024-10-03 04:09:32,337 - Inference - DEBUG - Making predictions with the model.
+2024-10-03 04:09:33,543 - Inference - DEBUG - Annotating image with bounding boxes and labels.
+2024-10-03 04:09:56,785 - Inference - DEBUG - Loading pre-trained model: XRayBoneFractureModel from path: /workspaces/X-Ray-Bones-Fracture-Detection/pre-trained_model/XRayBoneFractureModel.h5
+2024-10-03 04:09:56,785 - Inference - DEBUG - Loading model from: /workspaces/X-Ray-Bones-Fracture-Detection/pre-trained_model/XRayBoneFractureModel.h5
+2024-10-03 04:09:58,612 - Inference - DEBUG - Model loaded successfully: XRayBoneFractureModel
+2024-10-03 04:09:58,612 - Inference - DEBUG - Image provided for prediction: str
+2024-10-03 04:09:58,612 - Inference - DEBUG - Loading image from file path: /workspaces/X-Ray-Bones-Fracture-Detection/data/extraction_zip/YOLODataSet/images/val/XR_ELBOW_positive_997.png
+2024-10-03 04:09:58,614 - Inference - DEBUG - Resizing image from (512, 253, 3) to (512, 512)
+2024-10-03 04:09:58,616 - Inference - DEBUG - Making predictions with the model.
+2024-10-03 04:09:59,849 - Inference - DEBUG - Annotating image with bounding boxes and labels.
+2024-10-03 04:09:59,849 - Inference - DEBUG - Image prediction completed.
+2024-10-03 04:10:10,512 - Inference - DEBUG - Loading pre-trained model: XRayBoneFractureModel from path: /workspaces/X-Ray-Bones-Fracture-Detection/pre-trained_model/XRayBoneFractureModel.h5
+2024-10-03 04:10:10,512 - Inference - DEBUG - Loading model from: /workspaces/X-Ray-Bones-Fracture-Detection/pre-trained_model/XRayBoneFractureModel.h5
+2024-10-03 04:10:12,186 - Inference - DEBUG - Model loaded successfully: XRayBoneFractureModel
+2024-10-03 04:10:12,186 - Inference - DEBUG - Image provided for prediction: str
+2024-10-03 04:10:12,186 - Inference - DEBUG - Loading image from file path: /workspaces/X-Ray-Bones-Fracture-Detection/data/extraction_zip/YOLODataSet/images/val/XR_ELBOW_positive_997.png
+2024-10-03 04:10:12,188 - Inference - DEBUG - Resizing image from (512, 253, 3) to (512, 512)
+2024-10-03 04:10:12,190 - Inference - DEBUG - Making predictions with the model.
+2024-10-03 04:10:13,384 - Inference - DEBUG - Annotating image with bounding boxes and labels.
+2024-10-03 04:17:04,529 - Inference - DEBUG - Loading pre-trained model: XRayBoneFractureModel from path: /workspaces/X-Ray-Bones-Fracture-Detection/pre-trained_model/XRayBoneFractureModel.h5
+2024-10-03 04:17:04,529 - Inference - DEBUG - Loading model from: /workspaces/X-Ray-Bones-Fracture-Detection/pre-trained_model/XRayBoneFractureModel.h5
+2024-10-03 04:17:06,172 - Inference - DEBUG - Model loaded successfully: XRayBoneFractureModel
+2024-10-03 04:17:06,172 - Inference - DEBUG - Image provided for prediction: str
+2024-10-03 04:17:06,172 - Inference - DEBUG - Loading image from file path: /workspaces/X-Ray-Bones-Fracture-Detection/data/extraction_zip/YOLODataSet/images/val/XR_ELBOW_positive_997.png
+2024-10-03 04:17:06,174 - Inference - DEBUG - Resizing image from (512, 253, 3) to (512, 512)
+2024-10-03 04:17:06,177 - Inference - DEBUG - Making predictions with the model.
+2024-10-03 04:17:07,393 - Inference - DEBUG - Annotating image with bounding boxes and labels.
+2024-10-03 04:17:07,393 - Inference - DEBUG - Predicted: Elbow Fracture, Conf: 0.53 at position (17.850830078125, 4.00390625, 25.297683715820312, 20.47265625)
+2024-10-03 04:17:07,393 - Inference - DEBUG - Image prediction completed.
+2024-10-03 04:17:36,126 - Inference - DEBUG - Loading pre-trained model: XRayBoneFractureModel from path: /workspaces/X-Ray-Bones-Fracture-Detection/pre-trained_model/XRayBoneFractureModel.h5
+2024-10-03 04:17:36,127 - Inference - DEBUG - Loading model from: /workspaces/X-Ray-Bones-Fracture-Detection/pre-trained_model/XRayBoneFractureModel.h5
+2024-10-03 04:17:37,771 - Inference - DEBUG - Model loaded successfully: XRayBoneFractureModel
+2024-10-03 04:17:37,772 - Inference - DEBUG - Image provided for prediction: str
+2024-10-03 04:17:37,773 - Inference - DEBUG - Loading image from file path: /workspaces/X-Ray-Bones-Fracture-Detection/data/extraction_zip/YOLODataSet/images/val/XR_ELBOW_positive_997.png
+2024-10-03 04:17:37,776 - Inference - DEBUG - Resizing image from (512, 253, 3) to (512, 512)
+2024-10-03 04:17:37,778 - Inference - DEBUG - Making predictions with the model.
+2024-10-03 04:17:39,004 - Inference - DEBUG - Annotating image with bounding boxes and labels.
+2024-10-03 04:17:39,006 - Inference - DEBUG - Predicted: Elbow Fracture, Conf: 0.53 at position (17.850830078125, 4.00390625, 25.297683715820312, 20.47265625)
+2024-10-03 04:17:39,007 - Inference - DEBUG - Image prediction completed.
+2024-10-03 04:18:25,976 - Inference - DEBUG - Loading pre-trained model: XRayBoneFractureModel from path: /workspaces/X-Ray-Bones-Fracture-Detection/pre-trained_model/XRayBoneFractureModel.h5
+2024-10-03 04:18:25,977 - Inference - DEBUG - Loading model from: /workspaces/X-Ray-Bones-Fracture-Detection/pre-trained_model/XRayBoneFractureModel.h5
+2024-10-03 04:18:27,610 - Inference - DEBUG - Model loaded successfully: XRayBoneFractureModel
+2024-10-03 04:18:27,611 - Inference - DEBUG - Image provided for prediction: str
+2024-10-03 04:18:27,611 - Inference - DEBUG - Loading image from file path: /workspaces/X-Ray-Bones-Fracture-Detection/data/extraction_zip/YOLODataSet/images/val/XR_ELBOW_positive_997.png
+2024-10-03 04:18:27,614 - Inference - DEBUG - Resizing image from (512, 253, 3) to (512, 512)
+2024-10-03 04:18:27,616 - Inference - DEBUG - Making predictions with the model.
+2024-10-03 04:18:28,840 - Inference - DEBUG - Annotating image with bounding boxes and labels.
+2024-10-03 04:18:28,841 - Inference - DEBUG - Predicted: Elbow Fracture, Conf: 0.53 at position (17.850830078125, 4.00390625, 25.297683715820312, 20.47265625)
+2024-10-03 04:18:28,842 - Inference - DEBUG - Image prediction completed.
+2024-10-03 04:19:37,786 - Inference - DEBUG - Loading pre-trained model: XRayBoneFractureModel from path: /workspaces/X-Ray-Bones-Fracture-Detection/pre-trained_model/XRayBoneFractureModel.h5
+2024-10-03 04:19:37,786 - Inference - DEBUG - Loading model from: /workspaces/X-Ray-Bones-Fracture-Detection/pre-trained_model/XRayBoneFractureModel.h5
+2024-10-03 04:19:39,389 - Inference - DEBUG - Model loaded successfully: XRayBoneFractureModel
+2024-10-03 04:19:39,390 - Inference - DEBUG - Image provided for prediction: str
+2024-10-03 04:19:39,390 - Inference - DEBUG - Loading image from file path: /workspaces/X-Ray-Bones-Fracture-Detection/data/extraction_zip/YOLODataSet/images/val/XR_ELBOW_positive_997.png
+2024-10-03 04:19:39,393 - Inference - DEBUG - Resizing image from (512, 253, 3) to (512, 512)
+2024-10-03 04:19:39,395 - Inference - DEBUG - Making predictions with the model.
+2024-10-03 04:19:40,639 - Inference - DEBUG - Annotating image with bounding boxes and labels.
+2024-10-03 04:19:40,641 - Inference - DEBUG - Predicted: Elbow Fracture, Conf: 0.53 at position (17.850830078125, 4.00390625, 1901.904800415039, 8436.00390625)
+2024-10-03 04:19:40,642 - Inference - DEBUG - Image prediction completed.
+2024-10-03 04:20:16,752 - Inference - DEBUG - Loading pre-trained model: XRayBoneFractureModel from path: /workspaces/X-Ray-Bones-Fracture-Detection/pre-trained_model/XRayBoneFractureModel.h5
+2024-10-03 04:20:16,753 - Inference - DEBUG - Loading model from: /workspaces/X-Ray-Bones-Fracture-Detection/pre-trained_model/XRayBoneFractureModel.h5
+2024-10-03 04:20:18,375 - Inference - DEBUG - Model loaded successfully: XRayBoneFractureModel
+2024-10-03 04:20:18,376 - Inference - DEBUG - Image provided for prediction: str
+2024-10-03 04:20:18,377 - Inference - DEBUG - Loading image from file path: /workspaces/X-Ray-Bones-Fracture-Detection/data/extraction_zip/YOLODataSet/images/val/XR_ELBOW_positive_997.png
+2024-10-03 04:20:18,379 - Inference - DEBUG - Resizing image from (512, 253, 3) to (512, 512)
+2024-10-03 04:20:18,383 - Inference - DEBUG - Making predictions with the model.
+2024-10-03 04:20:19,594 - Inference - DEBUG - Annotating image with bounding boxes and labels.
+2024-10-03 04:20:19,596 - Inference - DEBUG - Predicted: Elbow Fracture, Conf: 0.53 at position (17.850830078125, 4.00390625, 32.744537353515625, 36.94140625)
+2024-10-03 04:20:19,597 - Inference - DEBUG - Image prediction completed.
+2024-10-03 04:20:59,927 - Inference - DEBUG - Loading pre-trained model: XRayBoneFractureModel from path: /workspaces/X-Ray-Bones-Fracture-Detection/pre-trained_model/XRayBoneFractureModel.h5
+2024-10-03 04:20:59,928 - Inference - DEBUG - Loading model from: /workspaces/X-Ray-Bones-Fracture-Detection/pre-trained_model/XRayBoneFractureModel.h5
+2024-10-03 04:21:01,493 - Inference - DEBUG - Model loaded successfully: XRayBoneFractureModel
+2024-10-03 04:21:01,494 - Inference - DEBUG - Image provided for prediction: str
+2024-10-03 04:21:01,496 - Inference - DEBUG - Loading image from file path: /workspaces/X-Ray-Bones-Fracture-Detection/data/extraction_zip/YOLODataSet/images/val/XR_ELBOW_positive_997.png
+2024-10-03 04:21:01,498 - Inference - DEBUG - Resizing image from (512, 253, 3) to (512, 512)
+2024-10-03 04:21:01,501 - Inference - DEBUG - Making predictions with the model.
+2024-10-03 04:21:02,718 - Inference - DEBUG - Annotating image with bounding boxes and labels.
+2024-10-03 04:21:02,720 - Inference - DEBUG - Predicted: Elbow Fracture, Conf: 0.53 at position (17.850830078125, 4.00390625, 92.31936645507812, 168.69140625)
+2024-10-03 04:21:02,721 - Inference - DEBUG - Image prediction completed.
+2024-10-03 04:22:51,724 - Inference - DEBUG - Loading pre-trained model: XRayBoneFractureModel from path: /workspaces/X-Ray-Bones-Fracture-Detection/pre-trained_model/XRayBoneFractureModel.h5
+2024-10-03 04:22:51,725 - Inference - DEBUG - Loading model from: /workspaces/X-Ray-Bones-Fracture-Detection/pre-trained_model/XRayBoneFractureModel.h5
+2024-10-03 04:22:53,353 - Inference - DEBUG - Model loaded successfully: XRayBoneFractureModel
+2024-10-03 04:22:53,353 - Inference - DEBUG - Image provided for prediction: str
+2024-10-03 04:22:53,353 - Inference - DEBUG - Loading image from file path: /workspaces/X-Ray-Bones-Fracture-Detection/data/extraction_zip/YOLODataSet/images/train/XR_SHOULDER_positive_1109.png
+2024-10-03 04:22:53,357 - Inference - DEBUG - Resizing image from (512, 438, 3) to (512, 512)
+2024-10-03 04:22:53,359 - Inference - DEBUG - Making predictions with the model.
+2024-10-03 04:22:54,563 - Inference - DEBUG - Annotating image with bounding boxes and labels.
+2024-10-03 04:22:54,563 - Inference - DEBUG - Predicted: Shoulder Non-Fracture, Conf: 0.93 at position (72.447509765625, 10.71875, 367.049560546875, 325.09375)
+2024-10-03 04:22:54,563 - Inference - DEBUG - Image prediction completed.
+2024-10-03 04:23:14,494 - Inference - DEBUG - Loading pre-trained model: XRayBoneFractureModel from path: /workspaces/X-Ray-Bones-Fracture-Detection/pre-trained_model/XRayBoneFractureModel.h5
+2024-10-03 04:23:14,495 - Inference - DEBUG - Loading model from: /workspaces/X-Ray-Bones-Fracture-Detection/pre-trained_model/XRayBoneFractureModel.h5
+2024-10-03 04:23:16,101 - Inference - DEBUG - Model loaded successfully: XRayBoneFractureModel
+2024-10-03 04:23:16,102 - Inference - DEBUG - Image provided for prediction: str
+2024-10-03 04:23:16,103 - Inference - DEBUG - Loading image from file path: /workspaces/X-Ray-Bones-Fracture-Detection/data/extraction_zip/YOLODataSet/images/train/XR_SHOULDER_positive_1109.png
+2024-10-03 04:23:16,106 - Inference - DEBUG - Resizing image from (512, 438, 3) to (512, 512)
+2024-10-03 04:23:16,109 - Inference - DEBUG - Making predictions with the model.
+2024-10-03 04:23:17,328 - Inference - DEBUG - Annotating image with bounding boxes and labels.
+2024-10-03 04:23:17,329 - Inference - DEBUG - Predicted: Shoulder Non-Fracture, Conf: 0.93 at position (72.447509765625, 10.71875, 367.049560546875, 325.09375)
+2024-10-03 04:23:17,331 - Inference - DEBUG - Image prediction completed.
+2024-10-03 04:24:26,218 - Inference - DEBUG - Loading pre-trained model: XRayBoneFractureModel from path: /workspaces/X-Ray-Bones-Fracture-Detection/pre-trained_model/XRayBoneFractureModel.h5
+2024-10-03 04:24:26,218 - Inference - DEBUG - Loading model from: /workspaces/X-Ray-Bones-Fracture-Detection/pre-trained_model/XRayBoneFractureModel.h5
+2024-10-03 04:24:27,826 - Inference - DEBUG - Model loaded successfully: XRayBoneFractureModel
+2024-10-03 04:24:27,827 - Inference - DEBUG - Image provided for prediction: str
+2024-10-03 04:24:27,828 - Inference - DEBUG - Loading image from file path: /workspaces/X-Ray-Bones-Fracture-Detection/data/extraction_zip/YOLODataSet/images/train/XR_SHOULDER_positive_1109.png
+2024-10-03 04:24:27,831 - Inference - DEBUG - Resizing image from (512, 438, 3) to (512, 512)
+2024-10-03 04:24:27,834 - Inference - DEBUG - Making predictions with the model.
+2024-10-03 04:24:29,059 - Inference - DEBUG - Annotating image with bounding boxes and labels.
+2024-10-03 04:24:29,061 - Inference - DEBUG - Predicted: Shoulder Non-Fracture, Conf: 0.93 at position (72.447509765625, 10.71875, 101.90771484375, 42.15625)
+2024-10-03 04:24:29,063 - Inference - DEBUG - Image prediction completed.
+2024-10-03 04:25:29,499 - Inference - DEBUG - Loading pre-trained model: XRayBoneFractureModel from path: /workspaces/X-Ray-Bones-Fracture-Detection/pre-trained_model/XRayBoneFractureModel.h5
+2024-10-03 04:25:29,501 - Inference - DEBUG - Loading model from: /workspaces/X-Ray-Bones-Fracture-Detection/pre-trained_model/XRayBoneFractureModel.h5
+2024-10-03 04:25:31,382 - Inference - DEBUG - Model loaded successfully: XRayBoneFractureModel
+2024-10-03 04:25:31,384 - Inference - DEBUG - Image provided for prediction: str
+2024-10-03 04:25:31,384 - Inference - DEBUG - Loading image from file path: /workspaces/X-Ray-Bones-Fracture-Detection/data/extraction_zip/YOLODataSet/images/train/XR_SHOULDER_positive_1109.png
+2024-10-03 04:25:31,388 - Inference - DEBUG - Resizing image from (512, 438, 3) to (512, 512)
+2024-10-03 04:25:31,390 - Inference - DEBUG - Making predictions with the model.
+2024-10-03 04:25:32,578 - Inference - DEBUG - Annotating image with bounding boxes and labels.
+2024-10-03 04:25:32,580 - Inference - DEBUG - Predicted: Shoulder Non-Fracture, Conf: 0.93 at position (72.447509765625, 10.71875, 101.90771484375, 42.15625)
+2024-10-03 04:25:32,581 - Inference - DEBUG - Image prediction completed.
