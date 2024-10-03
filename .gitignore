@@ -1,14 +1,19 @@
-# Ignore all environments
+# Ignore virtual environments
 venv/
 env/
 .venv/
 ENV/
 config/.env
 .env
+
+# Kaggle and sensitive data files
 kaggle.json
 *.h5
 xr_bones.zip
 *.zip
 
-data
-/workspaces/DetectionXR/data
+/__pycache__/
+/workspaces/X-Ray-Bones-Fracture-Detection/src/utils/__pycache__
+# Project-specific data directories
+data/
+workspaces/DetectionXR/data/
