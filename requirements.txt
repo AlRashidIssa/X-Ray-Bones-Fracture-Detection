@@ -30,3 +30,5 @@ gunicorn         # WSGI server for deployment (for Django)
 
 # Kaggle
 kaggle
+
+opencv-python
