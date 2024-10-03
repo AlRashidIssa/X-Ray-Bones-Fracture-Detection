@@ -32,10 +32,10 @@ def setup_logging(log_path: str, logger_name: str, logging_level: int):
     return logger
 
 # Log file paths for different components
-api_log_path = "/workspaces/DetectionXR/logs/api_logs/api.log"
-error_log_path = "/workspaces/DetectionXR/logs/error_logs/error.log"
-inference_log_path = "/workspaces/DetectionXR/logs/inference_logs/inference.log"
-train_log_path = "/workspaces/DetectionXR/logs/train_logs/train.log"
+api_log_path = "/workspaces/X-Ray-Bones-Fracture-Detection/logs/api_logs/api.log"
+error_log_path = "/workspaces/X-Ray-Bones-Fracture-Detection/logs/error_logs/error.log"
+inference_log_path = "/workspaces/X-Ray-Bones-Fracture-Detection/logs/inference_logs/inference.log"
+train_log_path = "/workspaces/X-Ray-Bones-Fracture-Detection/logs/train_logs/train.log"
 
 # Setup separate loggers for each component with appropriate logging levels
 api_logger = setup_logging(api_log_path, "API", logging.INFO)
