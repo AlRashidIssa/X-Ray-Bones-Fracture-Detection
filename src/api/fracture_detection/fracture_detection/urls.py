@@ -19,14 +19,10 @@ from django.contrib import admin
 from django.urls import path
 from core import views
 
-urlpatterns = [
-    path("admin/", admin.site.urls),
-    path("", views , name=""),
-    path("", views , name=""),
-    path("", views , name=""),
-    path("", views , name=""),
-    path("", views , name=""),
-    path("", views , name=""),
-    path("", views , name=""),
+from django.contrib import admin
+from django.urls import path, include
 
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('', include('core.urls'))
 ]
