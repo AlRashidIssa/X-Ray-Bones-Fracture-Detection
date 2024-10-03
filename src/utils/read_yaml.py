@@ -21,7 +21,7 @@ def load_config(file_path: Union[str, None]) -> Dict[str, Any]:
     """
     if not file_path:
         # Look for a YAML file in the specified directory if no file_path is provided
-        config_dir = "/workspaces/DetectionXR/config"
+        config_dir = f"{append_path}/config"
         files = os.listdir(config_dir)
         yaml_files = [file for file in files if file.endswith('.yml') or file.endswith('.yaml')]
         if not yaml_files:
