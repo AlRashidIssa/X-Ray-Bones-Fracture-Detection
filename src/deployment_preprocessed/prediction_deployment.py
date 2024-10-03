@@ -57,7 +57,7 @@ class PredictionDeployment(IPredictionDeployment):
             confidence_threshold (float): The confidence threshold to filter predictions.
 
         Returns:
-            np.ndarray: The image with annotated bounding boxes and class labels.
+            Tupe[np.ndarray, str]: Annotated image with bounding boxes and label, lable.
 
         Raises:
             ValueError: If image or model is None, or if prediction results do not match expectations.
