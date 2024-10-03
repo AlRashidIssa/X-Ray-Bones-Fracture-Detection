@@ -1,13 +1,13 @@
 dataset:
   url: "https://drive.google.com/file/d/1z-eWq6Ld_0h9QFHVNd2biJ25lLwwNo3m/view?usp=sharing"
-  output_path: "/workspaces/DetectionXR/data/raw"
+  output_path: "/workspaces/X-Ray-Bones-Fracture-Detection/data/raw"
   name_dataset: "YOLODataSet"
-  image_dir: "/workspaces/DetectionXR/data/extraction_zip/YOLODataSet/images/train"
-  label_dir: "/workspaces/DetectionXR/data/extraction_zip/YOLODataSet/labels/train"
-  val_image_dir: "/workspaces/DetectionXR/data/extraction_zip/YOLODataSet/images/val"
-  val_label_dir: "/workspaces/DetectionXR/data/extraction_zip/YOLODataSet/labels/val"
-  zip_dir: "/workspaces/DetectionXR/data/raw"
-  extract_to: "/workspaces/DetectionXR/data/extraction_zip"
+  image_dir: "/workspaces/X-Ray-Bones-Fracture-Detection/data/extraction_zip/YOLODataSet/images/train"
+  label_dir: "/workspaces/X-Ray-Bones-Fracture-Detection/data/extraction_zip/YOLODataSet/labels/train"
+  val_image_dir: "/workspaces/X-Ray-Bones-Fracture-Detection/data/extraction_zip/YOLODataSet/images/val"
+  val_label_dir: "/workspaces/X-Ray-Bones-Fracture-Detection/data/extraction_zip/YOLODataSet/labels/val"
+  zip_dir: "/workspaces/X-Ray-Bones-Fracture-Detection/data/raw"
+  extract_to: "/workspaces/X-Ray-Bones-Fracture-Detection/data/extraction_zip"
   batch_size: 4
   image_size: [512, 512]
   num_anchors: 3
