@@ -46,7 +46,7 @@ class PredictionDeployment(IPredictionDeployment):
     """
     
     def call(self, model: tf.keras.Model, image: Union[str, np.ndarray, None] = None, 
-             confidence_threshold: float = 0.5) -> np.ndarray:
+             confidence_threshold: float = 0.1) -> np.ndarray:
         """
         Processes the image, makes predictions using the model, and returns the annotated image.
 
@@ -99,12 +99,8 @@ class PredictionDeployment(IPredictionDeployment):
             log_error(f"Model prediction failed: {e}")
             raise RuntimeError(f"Prediction failed: {e}")
 
-        # Validate the output of the model prediction
-        if len(prediction) != 2:
-            log_error(f"Unexpected prediction output shape: {len(prediction)}. Expected 2 outputs (bboxes and class_probs).")
-            raise ValueError("Model output shape is invalid.")
-
-        bboxes, class_probs = prediction
+        bboxes = prediction[1]
+        class_probs = prediction[0] 
 
         if bboxes.shape[0] == 0:
             log_error("No bounding boxes predicted.")
@@ -131,27 +127,26 @@ class PredictionDeployment(IPredictionDeployment):
         height, width = image.shape[:2]
         log_inference("Annotating image with bounding boxes and labels.")
         
-        for idx in valid_indices:
-            box = np.squeeze(bboxes[idx])
-            class_id = class_ids[idx]
-            confidence = confidence_scores[idx]
-            
+        # Squeeze the boxes to remove extra dimensions
+        bboxes = np.squeeze(bboxes)
+
+        for bbox, class_id, conf in zip(bboxes,  class_ids, confidence_scores):
             # Unscale the bounding box
-            x_min, y_min, w, h = box
+            x_min, y_min, w, h = bbox
             x_min *= width
             y_min *= height
-            w *= width
-            h *= height
+            w *= width * 6
+            h *= height * 6
 
             x_max = x_min + w
             y_max = y_min + h
 
             # Draw bounding box
-            cv2.rectangle(image, (int(x_min + 50), int(y_min + 50)), (int(x_max + 50), int(y_max + 50)), (0, 255, 0), 2)
+            cv2.rectangle(image, (int(x_min), int(y_min)), (int(x_max), int(y_max)), (0, 255, 0), 2)
 
             # Prepare the label with class name and confidence score
             class_name = class_names[class_id]
-            bbox_info = f'{class_name}, Conf: {confidence:.2f}'
+            bbox_info = f'{class_name}, Conf: {conf:.2f}'
             log_inference(f"Predicted: {bbox_info} at position ({x_min}, {y_min}, {x_max}, {y_max})")
 
             # Adjust the position of the text
@@ -159,4 +154,3 @@ class PredictionDeployment(IPredictionDeployment):
             cv2.putText(image, bbox_info, text_position, cv2.FONT_HERSHEY_SIMPLEX, 0.40, (155, 255, 100), 2)
 
         return image
-
