@@ -30,7 +30,7 @@ class TestRunRunPipelineDeploymentPrediction(unittest.TestCase):
         Test the prediction pipeline with an image file path.
         """
         pipeline = RunRunPipelineDeploymentPrediction()
-        result = pipeline.call(model_path=self.model_path, image=self.image_path, model_name="TestModel")
+        result, label = pipeline.call(model_path=self.model_path, image=self.image_path, model_name="TestModel")
         
         # Validate that the result is a NumPy array (as the output should be the image with bounding boxes)
         self.assertIsInstance(result, np.ndarray, "The prediction result should be a NumPy array.")
@@ -41,10 +41,12 @@ class TestRunRunPipelineDeploymentPrediction(unittest.TestCase):
         Test the prediction pipeline with an image as a NumPy array.
         """
         pipeline = RunRunPipelineDeploymentPrediction()
-        result = pipeline.call(model_path=self.model_path, image=self.image, model_name="TestModel")
+        result, label = pipeline.call(model_path=self.model_path, image=self.image, model_name="TestModel")
         
         # Validate that the result is a NumPy array
         self.assertIsInstance(result, np.ndarray, "The prediction result should be a NumPy array.")
+        self.assertIsInstance(label, str, "The Prediction label it is string.")
+
         self.assertFalse(result is None, "The prediction result should not be None.")
 
 if __name__ == "__main__":
