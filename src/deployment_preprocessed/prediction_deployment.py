@@ -33,7 +33,7 @@ class IPredictionDeployment(ABC):
             confidence_threshold (float): Confidence threshold to filter low-confidence predictions.
 
         Returns:
-            np.ndarray: Annotated image with bounding boxes and labels.
+            Tupe[np.ndarray, str]: Annotated image with bounding boxes and label, lable.
         """
         pass
 
