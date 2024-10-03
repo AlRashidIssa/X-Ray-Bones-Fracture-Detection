@@ -4,7 +4,7 @@ import tensorflow as tf
 import sys
 import cv2
 from abc import ABC, abstractmethod
-from typing import Union, Any, List
+from typing import Union, Any, List, Tuple
 
 # Append the path to the workspace for importing utility functions
 append_path = "/workspaces/X-Ray-Bones-Fracture-Detection"
@@ -22,7 +22,8 @@ class IPredictionDeployment(ABC):
     """
     
     @abstractmethod
-    def call(self, model: tf.keras.Model, image: Union[str, np.ndarray], confidence_threshold: float) -> np.ndarray:
+    def call(self, model: tf.keras.Model, image: Union[str, np.ndarray, None] = None, 
+             confidence_threshold: float = 0.1) -> Tuple[np.ndarray, str]:
         """
         Method to handle predictions on input images.
         
@@ -46,7 +47,7 @@ class PredictionDeployment(IPredictionDeployment):
     """
     
     def call(self, model: tf.keras.Model, image: Union[str, np.ndarray, None] = None, 
-             confidence_threshold: float = 0.1) -> np.ndarray:
+             confidence_threshold: float = 0.1) -> Tuple[np.ndarray, str]:
         """
         Processes the image, makes predictions using the model, and returns the annotated image.
 
@@ -153,4 +154,4 @@ class PredictionDeployment(IPredictionDeployment):
             text_position = (int(x_min), max(int(y_min) - 10, 10))
             cv2.putText(image, bbox_info, text_position, cv2.FONT_HERSHEY_SIMPLEX, 0.40, (155, 255, 100), 2)
 
-        return image
+        return image, class_name
