@@ -25,3 +25,6 @@ model:
   model_name: "first_deployment.h5"
   summary: true
   train: true
+
+deplyment:
+  pretrain_model_path: "/workspaces/X-Ray-Bones-Fracture-Detection/pre-trained_model/XRayBoneFractureModel.h5"
