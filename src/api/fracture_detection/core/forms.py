@@ -6,7 +6,7 @@ class LogIn(AuthenticationForm):
     username = forms.CharField(label='Username', widget=forms.TextInput(attrs={'autofocus': True}))
     password = forms.CharField(label='Password', widget=forms.PasswordInput)
 
-class LogUp(UserCreationForm):
+class SignUp(UserCreationForm):
     username = forms.CharField(label='Username', widget=forms.TextInput(attrs={'autofocus': True}))
     password1 = forms.CharField(label='Password', widget=forms.PasswordInput)
     password2 = forms.CharField(label='Confirm Password', widget=forms.PasswordInput)
