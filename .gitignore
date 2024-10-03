@@ -12,9 +12,18 @@ kaggle.json
 xr_bones.zip
 *.zip
 
-/__pycache__/
-/workspaces/X-Ray-Bones-Fracture-Detection/src/utils/__pycache__
+# Ignore all __pycache__ directories
+__pycache__/
+
+# Ignore specific __pycache__ directory
+/workspaces/X-Ray-Bones-Fracture-Detection/src/utils/__pycache__/
+
+# Ignore all .pyc files
 *.pyc
+
 # Project-specific data directories
 data/
 workspaces/DetectionXR/data/
+
+logs/
+
