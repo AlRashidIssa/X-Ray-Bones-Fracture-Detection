@@ -151,9 +151,12 @@ def result_view(request):
     return render(request, 'result.html', {'label': label, 'image': img_str})
 
 
+@csrf_exempt  # Use this for testing; remove for production
 def api(request):
     """
     API view for image processing and returning a JSON response.
+    Handles both GET and POST requests.
+    Returns the image path and label.
     """
     if request.method == 'POST':
         image_file = request.FILES.get('image')
@@ -169,19 +172,44 @@ def api(request):
             # Process the image
             processed_image, label = image_prediction(image_np=image_np)
 
+            # Save the processed image to a temporary location
+            image_path = save_processed_image(processed_image, label)
+
             # Log API response
             log_api(f'Image processed successfully, label: {label}')
 
-            # Return JSON response
-            return JsonResponse({'label': label, 'status': 'success'})
+            # Return JSON response with the image path and label
+            return JsonResponse({'label': label, 'status': 'success', 'image_path': image_path})
+
         except Exception as e:
             log_error(f'Error processing image in API: {str(e)}')
             return JsonResponse({'error': str(e)}, status=500)
+
+    elif request.method == 'GET':
+        # For GET requests, return instructions
+        return JsonResponse({'message': 'Send a POST request with an image to get predictions.'})
+
     else:
         log_error('Invalid request method for API.')
         return JsonResponse({'error': 'Invalid request method'}, status=405)
 
+def save_processed_image(image_np, label):
+    """
+    Save the processed image with a label and return the file path.
+    """
+    # Create a directory for saving processed images if it doesn't exist
+    output_dir = 'media/processed_images'
+    os.makedirs(output_dir, exist_ok=True)
 
+    # Generate a filename using the label (or some unique identifier)
+    filename = f"{label.replace(' ', '_')}.png"  # Replace spaces with underscores
+    file_path = os.path.join(output_dir, filename)
+
+    # Save the image
+    image = Image.fromarray(image_np)
+    image.save(file_path)
+
+    return file_path
 # Configuration and model path
 configration = Config(config=load_config(None))
 model_path = configration.pretrain_model_path
