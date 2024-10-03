@@ -4,7 +4,7 @@ import tensorflow as tf
 import sys
 import cv2
 from abc import ABC, abstractmethod
-from typing import Union, Any, List
+from typing import Tuple, Union, Any, List
 
 # Append the path to the workspace for importing utility functions
 append_path = "/workspaces/X-Ray-Bones-Fracture-Detection"
@@ -26,7 +26,7 @@ class IRunRunPipelineDeploymentPrediction(ABC):
         Abstract method to be implemented for loading the model and predicting on the input image.
     """
     @abstractmethod
-    def call(self, model_path: str, image: Union[str, np.ndarray, None] = None, model_name: str = "Unknown") -> np.ndarray:
+    def call(self, model_path: str, image: Union[str, np.ndarray, None] = None, model_name: str = "Unknown") -> Tuple[np.ndarray, str]:
         """
         Abstract method for the deployment process.
 
@@ -41,8 +41,7 @@ class IRunRunPipelineDeploymentPrediction(ABC):
 
         Returns
         -------
-        np.ndarray
-            The predicted image with bounding boxes.
+            Tupe[np.ndarray, str]: Annotated image with bounding boxes and label, lable.
         """
         pass
 
@@ -51,7 +50,7 @@ class RunRunPipelineDeploymentPrediction(IRunRunPipelineDeploymentPrediction):
     Concrete implementation of the IRunPipelineDeploymentPrediction interface.
     Handles the process of loading a pre-trained model and predicting the result on a given image.
     """
-    def call(self, model_path: str, image: Union[str, np.ndarray, None] = None, model_name: str = "Unknown") -> np.ndarray:
+    def call(self, model_path: str, image: Union[str, np.ndarray, None] = None, model_name: str = "Unknown") -> Tuple[np.ndarray, str]:
         """
         Executes the model deployment pipeline by loading a pre-trained model and predicting on the given image.
 
@@ -67,7 +66,7 @@ class RunRunPipelineDeploymentPrediction(IRunRunPipelineDeploymentPrediction):
         Returns
         -------
         np.ndarray
-            The predicted image with bounding boxes.
+            Tupe[np.ndarray, str]: Annotated image with bounding boxes and label, lable.
         
         Raises
         ------
@@ -102,10 +101,10 @@ class RunRunPipelineDeploymentPrediction(IRunRunPipelineDeploymentPrediction):
                 log_inference("Image provided as a NumPy array.")
 
             # Perform prediction on the image
-            img_pred = PredictionDeployment().call(model=model, image=image)
+            img_pred, label = PredictionDeployment().call(model=model, image=image)
             log_inference("Image prediction completed.")
 
-            return img_pred
+            return img_pred, label
 
         except Exception as e:
             log_error(f"Error occurred during prediction: {str(e)}")
@@ -127,7 +126,7 @@ pipeline = RunRunPipelineDeploymentPrediction()
 
 try:
     # Call the pipeline to load the model and predict the result on the image
-    predicted_image = pipeline.call(model_path=model_path, image=image_path, model_name=model_name)
+    predicted_image, label = pipeline.call(model_path=model_path, image=image_path, model_name=model_name)
 
     # If prediction is successful, perform some post-processing
     # For example, you could display the predicted image using OpenCV or save it to a file
