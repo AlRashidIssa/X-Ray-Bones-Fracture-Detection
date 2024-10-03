@@ -10,5 +10,5 @@ urlpatterns = [
     path('result/', views.result_view, name='result'),
     path('index/', views.index, name='index'),
     path('error/', views.error_view, name='error'),
-    path('api/process_image/', views.api, name='process_image_api'),  # JSON API
+    path('api/process_image/', views.api, name='process_image_api'),
 ]

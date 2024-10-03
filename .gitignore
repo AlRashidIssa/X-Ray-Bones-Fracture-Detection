@@ -27,3 +27,8 @@ workspaces/DetectionXR/data/
 
 logs/
 
+db
+*.sqlite3
+*.sql
+*.db
+
