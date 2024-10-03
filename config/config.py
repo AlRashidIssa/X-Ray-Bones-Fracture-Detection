@@ -28,6 +28,9 @@ class IConfig(ABC):
     num_anchors: int
     num_classes: int
 
+    # Deplyment_parameters
+    pretrain_model_path: str
+
     # Model parameters
     AXL: str
     inputs_shape: Tuple[int, int, int]
@@ -80,6 +83,8 @@ class Config(IConfig):
             self.model_name = config['model']['model_name']
             self.summary = config['model']['summary']
             self.train = config['model']['train']
+
+            self.pretrain_model_path = config['deplyment']['pretrain_model_path']
         except KeyError as e:
             log_error(f"Missing configuration key: {e}")
             raise
